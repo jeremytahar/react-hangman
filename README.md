@@ -1,50 +1,42 @@
-# React + TypeScript + Vite
+# HANGMAN GAME - Jérémy TAHAR 
+This project is a classic Hangman game developed as part of a university assignment. It consists of a front-end built with React and TypeScript, and an API built with Node.js and TypeScript that generates random words for the game.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Installation
+1. Clone the repository with submodules: 
+```bash
+git clone --recurse-submodules https://github.com/jeremytahar/react-hangman.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+2. Navigate to the project folder:
+```bash 
+cd react-hangman
 ```
+
+3. Install the dependencies for the front-end:
+```bash
+npm install
+```
+
+4. Now, go to the node-hangman-api directory:
+```bash 
+cd node-hangman-api
+```
+
+5. Install the dependencies for the API:
+```bash 
+npm install
+```
+
+6. Run both the front-end and the back-end:
+• In the react-hangman folder (root), run:
+```bash 
+npm run dev
+```
+
+• In the node-hangman-api folder, run:
+```bash 
+npm run dev
+```
+
+7. Once both are running, access the site via ```http://localhost:5173```
