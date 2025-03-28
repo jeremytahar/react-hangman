@@ -67,7 +67,7 @@ export const Word = () => {
   }, [guessedLetters, normalizedWord]);
 
   useEffect(() => {
-    if (wrongLetters.length > 9) {
+    if (wrongLetters.length > 10) {
       setGameStatus("lose");
     }
   }, [wrongLetters]);
